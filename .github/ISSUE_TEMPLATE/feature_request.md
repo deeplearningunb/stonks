@@ -1,12 +1,3 @@
----
-name: Feature request
-about: Suggest an idea for this project
-title: ''
-labels: ''
-assignees: ''
-
----
-
 **Is your feature request related to a problem? Please describe.**
 <!-- A clear and concise description of what the problem is. Ex. I'm always frustrated when [...] -->
 
@@ -18,3 +9,9 @@ assignees: ''
 
 **Additional context**
 <!-- Add any other context or screenshots about the feature request here. -->
+
+**Checklist**
+- [ ] The issue has a meaningful name.
+- [ ] The issue has a meaningful description.
+- [ ] The issue has screenshots when needed.
+- [ ] The issue has labels.
