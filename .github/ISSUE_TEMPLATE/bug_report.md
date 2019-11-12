@@ -1,16 +1,8 @@
----
-name: Bug report
-about: Create a report to help us improve
-title: ''
-labels: ''
-assignees: ''
-
----
-
 **Describe the bug**
 <!-- A clear and concise description of what the bug is. -->
 
 **To Reproduce**
+
 Steps to reproduce the behavior:
 1. Go to '...'
 2. Click on '....'
@@ -25,3 +17,9 @@ Steps to reproduce the behavior:
 
 **Additional context**
 <!-- Add any other context about the problem here. -->
+
+**Checklist**
+- [ ] The issue has a meaningful name.
+- [ ] The issue has a meaningful description.
+- [ ] The issue has screenshots when needed.
+- [ ] The issue has labels.
