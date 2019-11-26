@@ -18,6 +18,10 @@ The Stonks project goal is to facilitate investor analysis of when is the right 
 
 In this way, Stonks will significantly help you achieve good results taking advantage of the  the market offers.
 
+<p align="center">
+<img src="https://github.com/deeplearningunb/stonks/blob/issue_08_update_README_informations/img/mario.gif">
+</p>
+
 ## Our Team
 
 Our team is made up of people who are interested in learning more about the financial market and applying this knowledge to deep learning solutions.
