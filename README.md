@@ -19,7 +19,7 @@ The Stonks project goal is to facilitate investor analysis of when is the right 
 In this way, Stonks will significantly help you achieve good results taking advantage of the  the market offers.
 
 <p align="center">
-<img src="https://github.com/deeplearningunb/stonks/blob/issue_08_update_README_informations/img/mario.gif">
+  <img src="https://github.com/deeplearningunb/stonks/blob/master/img/mario.gif">
 </p>
 
 ## Our Team
@@ -35,7 +35,7 @@ Leonardo Barreiros | [leossb36](https://github.com/leossb36)
 
 ### How to Contribute
 
-If you are also interested in the stock market and deep learning, you can contribute to our project by reading our contribution guide and following our code of conduct.
+If you are also interested in the stock market and deep learning, you can contribute to our project by reading our [contribution guide](https://github.com/deeplearningunb/stonks/blob/master/CONTRIBUTING.md) and following our [code of conduct](https://github.com/deeplearningunb/stonks/blob/master/CODE_OF_CONDUCT.md).
 
 ## Technologies
 The project use the Anaconda Python for your develop.
