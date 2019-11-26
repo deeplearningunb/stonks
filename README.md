@@ -18,7 +18,9 @@ The Stonks project goal is to facilitate investor analysis of when is the right 
 
 In this way, Stonks will significantly help you achieve good results taking advantage of the  the market offers.
 
-## Team
+## Our Team
+
+Our team is made up of people who are interested in learning more about the financial market and applying this knowledge to deep learning solutions.
 
 Name | Github
 -----|--------
@@ -26,6 +28,10 @@ Gabrielle Ribeiro | [Gabrielle-Ribeiro](https://github.com/Gabrielle-Ribeiro)
 Danilo Domingo | [danilow200](https://github.com/danilow200)
 Alvaro Gouvea | [AlGouvea](https://github.com/AlGouvea)
 Leonardo Barreiros | [leossb36](https://github.com/leossb36)
+
+### How to Contribute
+
+If you are also interested in the stock market and deep learning, you can contribute to our project by reading our contribution guide and following our code of conduct.
 
 ## Technologies
 The project use the Anaconda Python for your develop.
