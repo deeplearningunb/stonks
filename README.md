@@ -42,3 +42,7 @@ The project use the Anaconda Python for your develop.
 - Anaconda Python
   - Download [Python3](https://www.python.org/downloads/)
   - Download [Anaconda Python](https://www.anaconda.com/distribution/)
+  
+## License
+
+This project is licensed under the terms of the [MIT license](https://github.com/deeplearningunb/stonks/blob/master/LICENSE).
