@@ -40,6 +40,13 @@ Although RNNs have a similar learning method as other neural networks they are a
 
 That architecture of time related proccessing makes it easier for them to take part in task such as speech recognition and predictions over time, such as stock opening and/or closing prices.
 
+## About our Dataset
+
+<p align='justify'>About our dataset, we have created a python script to be able to extract data from APIs that are available on the web, and with the pandas library we can collect this data, as well as determine a period, because the amount of data is very large and therefore not It is so necessary to have exactly everything, and only a portion is needed to present the study.
+
+<p align='justify'>The script consists of consulting the desired API, having as parameter, the start and end period, to make the collection. We select the desired API according to the name reference given by pandas, then present the dataset in order to see if it is correct and finally store the desired data in csv format.
+
+
 ## Our Team
 
 Our team is made up of people who are interested in learning more about the financial market and applying this knowledge to deep learning solutions.
