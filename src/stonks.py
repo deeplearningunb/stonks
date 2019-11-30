@@ -26,4 +26,11 @@ for i in range(90, 2352):
     predictors.append(base_training_normalized[i-90:i, 0:4])
     open_price.append(base_open_value_normalized[i, 0])
     close_price.append(base_close_value_normalized[i, 0])
+
+predictors = np.array(predictors)
+open_price = np.array(open_price)
+close_price = np.array(close_price)
+
+
+    
     
