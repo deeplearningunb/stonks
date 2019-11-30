@@ -9,3 +9,7 @@ base = pd.read('anyfile.csv')
 base = base.dropna()
 base_training = base.iloc[:, 1:2].values]
 base_max_valor = base.iloc[:, 2:3].values]
+
+normalizer = MinMaxScaler(feature_range=(0,1))
+base_training_normalizer = normalizer.fit_transform(base_training)
+base_max_valor_normalizer = normalizer.fit_transform(base_max_valor)
