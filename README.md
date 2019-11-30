@@ -12,6 +12,13 @@ Nowadays, stocks are a type of investment that people are looking for, due to th
 
 On the other hand, this high frequency that stock prices changes is a feature enjoyed by those who invest in the stock market. These investors buy the stocks for a low price and sell for a higher price.
 
+### Recurrent neural networks
+A recurrent neural network (RNN) is a class of artificial neural networks in which the connections of nodes forms directed graphs along a temporal line. Unlike other neural networks that use the feedfoward system RNNs can use memory to proccess sequential inputs. Although they have a similar learning method as other neural networks they are able to remeber things they learned from prior inputs. In that way, RNNs are able to produce one (or more) output vectors that are not only influenced by the weights applied to the inputs as it is the case with other neural networks, instead their output is also influenced by the context of past inputs and outputs. That architecture of time related proccessing makes it easier for them to take part in task such as speech recognition and predictions over time, such as stock prices.
+
+<p align="center">
+	<img src="https://i.pinimg.com/originals/fe/63/3c/fe633cdec14b8f32adf1c441e37f58dd.gif">
+</p>
+
 ### How is our project related to this situation?
 
 The Stonks project goal is to facilitate investor analysis of when is the right time to buy and sell stocks, since this neural network will be able to present predictions about the stocks opening and closing price.
