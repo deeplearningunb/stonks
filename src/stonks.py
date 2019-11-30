@@ -4,6 +4,7 @@ from sklearn.preprocessing import MinMaxScaler
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
+from keras.callbacks import EarlyStopping, ReduceLROnPlateau, ModelCheckpoint
 
 # pre processing data
 base = pd.read_csv('../Dataset/Training/TSLA.csv')
@@ -54,4 +55,11 @@ regressor.add(Dropout(0.3))
 
 # Adding the output layer
 regressor.add(Dense(units = 2, activation = 'sigmoid'))
-    
+
+# Compiling rnn
+regressor.compile(optimizer = 'rmsprop', loss = 'mean_squared_error')
+
+early_stop = EarlyStopping(monitor = 'loss', min_delta = 1e-10, patience = 10, verbose = 1)
+rlr = ReduceLROnPlateau(monitor = 'loss', factor = 0.2, patience = 5, verbose = 1)
+
+regressor.fit(predictors, prices, epochs = 10, batch_size = 32)    
