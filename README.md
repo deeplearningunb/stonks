@@ -24,7 +24,7 @@ First of all we need to understand how the stocks market works.
 
 ### How are we gonna make it works? 
 
-<p align='justify'>In our project we use a Recurrent Neural Network - RNN. But, do you know what a RNN is?
+<p align='justify'>In our project we use a Recurrent Neural Network - RNN and Long Term Short Memory - LSTM . But, do you know what a RNN is?
 
 <p align='justify'>A Recurrent Neural Network is a class of artificial neural networks in which the connections of nodes forms directed graphs along a temporal line. But what is a neural network?
 
@@ -69,6 +69,16 @@ The project use the Anaconda Python for your develop.
   - Download [Anaconda Python](https://www.anaconda.com/distribution/)
   
 If you want config your environment, and have no idea what need to do. We're giving a brief explanation to you [here](ENVIRONMENT.md). 
+
+## Stonks Working
+
+The following graph was generated with the Stonks neural network. It shows the predictions of opening and closing stock prices of Tesla (TSLA) in the last month and also the actual values of this period.
+
+The whole dataset was taken from the Yahoo Finances API.
+
+<p align="center">
+  <img src="https://github.com/deeplearningunb/stonks/blob/master/img/graph.png">
+</p>
 
 ## License
 
