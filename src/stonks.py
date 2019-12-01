@@ -62,7 +62,8 @@ regressor.compile(optimizer = 'rmsprop', loss = 'mean_squared_error')
 early_stop = EarlyStopping(monitor = 'loss', min_delta = 1e-10, patience = 10, verbose = 1)
 rlr = ReduceLROnPlateau(monitor = 'loss', factor = 0.2, patience = 5, verbose = 1)
 
-regressor.fit(predictors, prices, epochs = 200, batch_size = 32)  
+regressor.fit(predictors, prices, epochs = 200, batch_size = 32,
+              callbacks = [early_stop, rlr])  
 
 base_test = pd.read_csv('../Dataset/Test/TSLA.csv')
 base_real_open_value = base_test.iloc[:, 3:4].values
