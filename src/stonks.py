@@ -4,7 +4,7 @@ from sklearn.preprocessing import MinMaxScaler
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
-from keras.callbacks import EarlyStopping, ReduceLROnPlateau, ModelCheckpoint
+from keras.callbacks import EarlyStopping, ReduceLROnPlateau
 
 # pre processing data
 base = pd.read_csv('../Dataset/Training/TSLA.csv')
@@ -54,7 +54,7 @@ regressor.add(LSTM(units = 50))
 regressor.add(Dropout(0.3))
 
 # Adding the output layer
-regressor.add(Dense(units = 2, activation = 'sigmoid'))
+regressor.add(Dense(units = 2, activation = 'linear'))
 
 # Compiling rnn
 regressor.compile(optimizer = 'rmsprop', loss = 'mean_squared_error')
@@ -62,4 +62,40 @@ regressor.compile(optimizer = 'rmsprop', loss = 'mean_squared_error')
 early_stop = EarlyStopping(monitor = 'loss', min_delta = 1e-10, patience = 10, verbose = 1)
 rlr = ReduceLROnPlateau(monitor = 'loss', factor = 0.2, patience = 5, verbose = 1)
 
-regressor.fit(predictors, prices, epochs = 10, batch_size = 32)    
+regressor.fit(predictors, prices, epochs = 200, batch_size = 32,
+              callbacks = [early_stop, rlr])  
+
+base_test = pd.read_csv('../Dataset/Test/TSLA.csv')
+base_real_open_value = base_test.iloc[:, 3:4].values
+base_real_close_value = base_test.iloc[:, 4:5].values
+
+frames = [base, base_test]
+base_complet = pd.concat(frames) 
+base_complet = base_complet.drop('Date', axis = 1)
+
+entry = base_complet[len(base_complet) - len(base_test) - 90:].values
+entry = normalizer.transform(entry)
+
+x_test = []
+for i in range(90, 112):
+    x_test.append(entry[i-90:i, 0:4])
+x_test = np.array(x_test)
+
+prediction = regressor.predict(x_test)
+prediction = normalizer.inverse_transform(prediction)
+
+prediction.mean()
+base_real_open_value.mean()
+base_real_close_value.mean()
+
+plt.plot(base_real_open_value, color = 'blue', label = 'Real open price')
+plt.plot(base_real_close_value, color = 'black', label = 'Real close price')
+
+plt.plot(prediction[:, 0], color = 'red', label = 'Open price prediction')
+plt.plot(prediction[:, 1], color = 'yellow', label = 'Close price prediction')
+
+plt.title('Prediction of Stocks Prices')
+plt.xlabel('Time')
+plt.ylabel('Price')
+plt.legend()
+plt.show()
