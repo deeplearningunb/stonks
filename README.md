@@ -32,13 +32,20 @@ First of all we need to understand how the stocks market works.
 
 <p align='justify'>Unlike other neural networks that use the feedfoward system RNNs can use memory to proccess sequential inputs through the architecture of Long term short memory (LSTM). LSTM is used in RNNs with the goal of enabling a memory system for the neural network and therefore allowing it to process data above a single data point but instead entire sequences of data (such as speech).A common LSTM is composed of a cell, an input gate, an output gate and a forget date. The cell is able to remember values over an arbitrary amount of time and the gates control de flow of data in and out of the cell.
 
-<p align='justify'>Although RNNs have a similar learning method as other neural networks they are able to remeber things they learned from prior inputs. In that way, RNNs are able to produce one (or more) output vectors that are not only influenced by the weights applied to the inputs as it is the case with other neural networks, instead their output is also influenced by the context of past inputs and outputs. 
+<p align='justify'>Although RNNs have a similar learning method as other neural networks they are able to remeber things they learned from prior inputs. In that way, RNNs are able to produce one (or more) output vectors that are not only influenced by the weights applied to the inputs as it is the case with other neural networks, instead their output is also influenced by the context of past inputs and outputs.
+
 
 <p align="center">
 	<img src="https://i.pinimg.com/originals/fe/63/3c/fe633cdec14b8f32adf1c441e37f58dd.gif">
 </p>
 
 <p align='justify'>That architecture of time related proccessing makes it easier for them to take part in task such as speech recognition and predictions over time, such as stock opening and/or closing prices.
+
+### About our Roadmap
+
+<p align="justify"> We created a roadmap so that we can describe each step by step we would take to complete the scope established in the project. In addition, we have also established the versioning of our project so that we can have a reference of progress of our process.
+
+![](img/roadmap.png)
 
 ## About our Dataset
 
